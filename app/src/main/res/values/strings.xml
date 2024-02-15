@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyNotesApp</string>
+    <string name="quotes">“Setting goals is the first step in turning the \n   invisible into the visible.”– Tony Robbins</string>
+
+
+    <style name="style">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
+    <string name="newuser">Are you going to make your task list ?\n     Here you can add your tasks</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notes"
+            android:layout_marginTop="35dp"
+            android:contentDescription="TODO" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quotes"
+          style="@style/style"
+            android:textColor="@color/gray"
+            android:layout_margin="20dp"
+            android:lineHeight="23dp"/>
+
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Let's go!"
+            android:textColor="@color/whitenew"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:padding="13dp"
+            android:background="@drawable/btn_bg"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+           />
+
+
+
+
+
+</LinearLayout>
