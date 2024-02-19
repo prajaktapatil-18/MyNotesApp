@@ -1,42 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@color/light_blue"
-    android:layout_height="match_parent"
-    tools:context=".HomePage">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleView"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/light_blue"
+        tools:context="com.example.mynotesapp.ui.HomeActivity">
 
-    <ImageView
-        android:id="@+id/newUserImg"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/addnotes2" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100dp"
+            android:layout_margin="@dimen/_10dp"
+            android:backgroundTint="@color/teal_700"
+            app:cardCornerRadius="@dimen/_10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-android:text="@string/newuser"
-        android:layout_below="@id/newUserImg"
-        style="@style/style"
-        android:layout_margin="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="@string/todays_task"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
 
+        </androidx.cardview.widget.CardView>
 
-    <ImageButton
-        android:id="@+id/addNote"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:cropToPadding="true"
-        android:padding="5dp"
-        android:src="@drawable/plus" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/crdHeader"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10dp"
+            android:visibility="gone" />
 
+        <TextView
+            android:id="@+id/tvNoTaskDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/crdHeader"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_task_description"
+            android:textColor="@color/teal_700" />
 
-</RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dp_20"
+            android:backgroundTint="@color/light_brown"
+            android:src="@drawable/baseline_add_24"/>
+    </RelativeLayout>
+</layout>

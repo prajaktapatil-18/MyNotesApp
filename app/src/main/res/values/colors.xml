@@ -15,4 +15,5 @@
     <color name="gray">#757575</color>
     <color name="morelight_brown">#ffcdd2</color>
     <color name="mediumLight_brown">#ff8a80</color>
+    <color name="colorPrimaryDark">#5D1F91</color>
 </resources>

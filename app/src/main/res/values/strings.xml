@@ -1,13 +1,21 @@
 <resources>
     <string name="app_name">MyNotesApp</string>
     <string name="quotes">“Setting goals is the first step in turning the \n   invisible into the visible.”– Tony Robbins</string>
-
-
-    <style name="style">
-        <item name="android:textSize">17sp</item>
-        <item name="android:textStyle">italic</item>
-
-    </style>
-
+    <string name="this_field_required">This field is required</string>
+    <string name="create_new_routine">Create new routine</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="priority">Priority</string>
+    <string name="done">done</string>
     <string name="newuser">Are you going to make your task list ?\n     Here you can add your tasks</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="title">Title</string>
+    <string name="create_new_task">Create New Task</string>
+    <string name="todays_task">Let\'s complete this goal today</string>
+    <string name="description">description</string>
+    <string name="task_created">Task created successfully</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="no_task_description">Look\'s like you don\'t have any created task.\n Please add task for yourself</string>
 </resources>
